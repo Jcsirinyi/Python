@@ -3,13 +3,12 @@ import random
 difficulties = {
     "Easy": (1, 10, None),
     "Medium": (1, 50, 7),
-    "Hard": (1, 100, 5),
+    "Hard": (1, 100, 10),
 }
 
 def get_difficulty():
     print("🎮 Choose a difficulty: Easy / Medium / Hard")
     choice = input("Enter difficulty: ").capitalize()
-
     if choice in difficulties:
         print(f"✅ You chose {choice} mode.")
         return difficulties[choice]
